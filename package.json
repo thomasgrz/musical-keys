@@ -1,0 +1,16 @@
+{
+  "name": "musical-keys",
+  "version": "1.0.0",
+  "description": "a demonstration of an app using the anime.js library",
+  "main": "index.js",
+  "author": "thomas <thomasgrz@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "anime": "^0.1.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.27.1",
+    "webpack-cli": "^4.5.0"
+  }
+}
