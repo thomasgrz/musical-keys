@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             debugger
             anime({
                 loop: 2,
-                     targets: [element], 
+                        targets: [element], 
                 rotate: {
                     value: 360,
                       duration: 1800,
