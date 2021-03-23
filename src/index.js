@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                         targets: [element], 
                 rotate: {
                     value: 360,
-                      duration: 1800,
+                         duration: 1800,
                     easing: 'easeInOutSine'
                 },
                 scale: {
