@@ -1,5 +1,6 @@
-var path = require("path");
-const { DefinePlugin } = require("webpack");
+const path = require("path");
+const CopyPlugin = require("copy-webpack-plugin");
+const { ProvidePlugin } = require("webpack");
 
 module.exports = {
   entry: {
@@ -15,6 +16,16 @@ module.exports = {
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
-    clean: true,
   },
+  plugins: [
+    new ProvidePlugin({ process: "process/browser" }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.join(__dirname, "src/assets"),
+          to: path.join(__dirname, "dist/assets"),
+        },
+      ],
+    }),
+  ],
 };

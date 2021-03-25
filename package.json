@@ -6,12 +6,15 @@
   "author": "thomas <thomasgrz@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "start": "npx webpack serve --open"
+    "start": "webpack serve --open"
   },
   "dependencies": {
-    "animejs": "^3.2.1"
+    "animejs": "^3.2.1",
+    "howler": "^2.2.1",
+    "process": "^0.11.10"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^8.1.0",
     "lint-staged": ">=10",
     "prettier": "2.2.1",
     "simple-git-hooks": ">=2.0.3",
